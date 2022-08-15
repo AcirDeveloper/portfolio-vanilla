@@ -1,0 +1,60 @@
+.about_me_section {
+	margin-block: 3rem;
+	display: flex;
+	justify-content: center;
+}
+
+.about_me_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 50rem;
+	margin-block-start: 3rem;
+	margin-inline: 1rem;
+}
+
+.about_me_h2 {
+	color: aqua;
+	font-size: 3rem;
+	font-weight: 600;
+	margin: 0;
+}
+
+@media only screen and (max-width: 385px) {
+	.about_me_h2 {
+		color: aqua;
+		font-size: 2.3rem;
+		font-weight: 600;
+		margin: 0;
+	}
+
+	.my_abilities_h2 {
+		color: aqua;
+		margin: 0;
+		font-size: 2.3rem;
+	}
+}
+
+.about_me_p {
+	color: white;
+	font-size: 1.5rem;
+	text-align: justify;
+}
+
+.about_me_p span {
+	font-size: 2rem;
+	color: aqua;
+	font-weight: 600;
+}
+
+.my_abilities_section {
+	font-size: 2rem;
+	color: white;
+	text-align: center;
+	margin-bottom: 6rem;
+}
+
+.my_abilities_h2 {
+	color: aqua;
+	margin: 0;
+}

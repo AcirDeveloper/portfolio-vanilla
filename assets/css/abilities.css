@@ -1,0 +1,125 @@
+.container {
+	position: relative;
+	width: 60%;
+	margin: 0 auto 0 auto;
+	perspective: 1000px;
+	display: flex;
+	place-content: center;
+}
+
+.carousel {
+	position: relative;
+	width: 65%;
+	height: 100%;
+	transform-style: preserve-3d;
+	animation: rotate360 60s infinite forwards linear;
+}
+
+.carousel_face {
+	position: absolute;
+	top: 1rem;
+	left: 10px;
+	right: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+.carousel_content {
+	margin: 0;
+	font-size: 2rem;
+}
+
+.carousel_p {
+	margin: 0;
+}
+
+.carousel_face:nth-child(1) {
+	transform: rotateY(0deg) translateZ(15rem);
+}
+
+.carousel_face:nth-child(2) {
+	transform: rotateY(60deg) translateZ(15rem);
+}
+
+.carousel_face:nth-child(3) {
+	transform: rotateY(120deg) translateZ(15rem);
+}
+
+.carousel_face:nth-child(4) {
+	transform: rotateY(180deg) translateZ(15rem);
+}
+
+.carousel_face:nth-child(5) {
+	transform: rotateY(240deg) translateZ(15rem);
+}
+
+.carousel_face:nth-child(6) {
+	transform: rotateY(300deg) translateZ(15rem);
+}
+
+@media only screen and (max-width: 580px) {
+	.carousel_face:nth-child(1) {
+		transform: rotateY(0deg) translateZ(10rem);
+	}
+
+	.carousel_face:nth-child(2) {
+		transform: rotateY(60deg) translateZ(10rem);
+	}
+
+	.carousel_face:nth-child(3) {
+		transform: rotateY(120deg) translateZ(10rem);
+	}
+
+	.carousel_face:nth-child(4) {
+		transform: rotateY(180deg) translateZ(10rem);
+	}
+
+	.carousel_face:nth-child(5) {
+		transform: rotateY(240deg) translateZ(10rem);
+	}
+
+	.carousel_face:nth-child(6) {
+		transform: rotateY(300deg) translateZ(10rem);
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.carousel_face:nth-child(1) {
+		transform: rotateY(0deg) translateZ(5rem);
+	}
+
+	.carousel_face:nth-child(2) {
+		transform: rotateY(60deg) translateZ(5rem);
+	}
+
+	.carousel_face:nth-child(3) {
+		transform: rotateY(120deg) translateZ(5rem);
+	}
+
+	.carousel_face:nth-child(4) {
+		transform: rotateY(180deg) translateZ(5rem);
+	}
+
+	.carousel_face:nth-child(5) {
+		transform: rotateY(240deg) translateZ(5rem);
+	}
+
+	.carousel_face:nth-child(6) {
+		transform: rotateY(300deg) translateZ(5rem);
+	}
+
+	.carousel_content {
+		margin: 0;
+		font-size: 1.6rem;
+	}
+}
+
+@keyframes rotate360 {
+	from {
+		transform: rotateY(0deg);
+	}
+
+	to {
+		transform: rotateY(-360deg);
+	}
+}

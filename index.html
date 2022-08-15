@@ -1,40 +1,283 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico">
-    <!-- Title -->
-    <title>Portafolio | Acir</title>
-    <!-- Font Awoesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-    <!-- Mis estilos -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Javascript -->
-    <script src="/js/app.js" type="text/javascript" defer></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Mis Estilos -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/response.css">
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="./assets/css/animation.css">
+  <link rel="stylesheet" href="./assets/css/home.css">
+  <link rel="stylesheet" href="./assets/css/services.css">
+  <link rel="stylesheet" href="./assets/css/about.css">
+  <link rel="stylesheet" href="./assets/css/abilities.css">
+  <link rel="stylesheet" href="./assets/css/portfolio.css">
+  <link rel="stylesheet" href="./assets/css/contact.css">
+  <!-- Scripts -->
+  <script src="https://kit.fontawesome.com/6a74fdfcbd.js" crossorigin="anonymous" defer></script>
+  <script src="./assets/js/main.js" defer></script>
+  <!-- Title -->
+  <title>Portfolio | JCV </title>
 </head>
 
-<body>
-    <!-- Header -->
-    <header></header>
-    <!-- Main -->
-    <main>
-        <section class="About">Sobre Mi</section>
-        <section class="Habilities">Habilidades y Experiencia</section>
-        <section class="proyectos">Proyectos</section>
-        <section class="contacto">
-            <form action=""></form>
-        </section>
-    </main>
-    <!-- Footer -->
-    <footer></footer>
-
+<body id="body" class="page">
+  <header class="header page_header">
+    <div class="responsive_nav_container">
+      <div class="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul class="menu">
+          <a href="#body">
+            <li>Home</li>
+          </a>
+          <a href="#about_me">
+            <li>About me</li>
+          </a>
+          <a href="#my_abilities">
+            <li>Habilities</li>
+          </a>
+          <a href="#services">
+            <li>Services</li>
+          </a>
+          <a href="#portfolio">
+            <li>Portfolio</li>
+          </a>
+          <a href="#contact">
+            <li>Contact</li>
+          </a>
+          <a href="#" class="button_download" download><button>Download CV</button></a>
+        </ul>
+      </div>
+    </div>
+    <h1 class="header_h1">JVC</h1>
+    <div class="navbar_container">
+      <nav class="navbar">
+        <a href="#body" class="navbar_a home">Home</a>
+        <a href="#about_me" class="navbar_a">About me</a>
+        <a href="#my_abilities" class="navbar_a">Habilities</a>
+        <a href="#services" class="navbar_a">Services</a>
+        <a href="#portfolio" class="navbar_a">Portfolio</a>
+        <a href="#contact" class="navbar_a">Contact</a>
+        <a href="#" class="button_download" download><button>Download CV</button></a>
+      </nav>
+    </div>
+  </header>
+  <ul class=" circles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  <section class="hero">
+    <div class="hero_main_container">
+      <div class="hero_container">
+        <figure class="hero_portfolio_image_container">
+          <img class="hero_image" src="/assets/images/perfil.jpeg" alt="Julio foto">
+          <figcaption class="hero_image_caption"> Hola, soy Julio!</figcaption>
+        </figure>
+      </div>
+      <div class="hero_subtitle_container">
+        <h2 class="hero_subtitle">Diseñador y <br>desarrollador <span class="hero_subtitle_typewriting"
+            id="typewriter"></span></h2>
+      </div>
+      <div class="hero_social_menu ">
+        <ul>
+          <li><a href="https://github.com/AcirDeveloper" target="blank"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.instagram.com/acirdeveloper/" target="blank"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li><a href="https://www.linkedin.com/in/julio-sevillano/" target="blank"><i
+                class="fab fa-linkedin-in"></i></a></li>
+          <li><a href="https://twitter.com/acirdeveloper/" target="blank"><i class="fab fa-brands fa-twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+  </section>
+  <main>
+    <section class=" about_me_section" id="about_me">
+      <div class="about_me_container ">
+        <h2 class="about_me_h2">Acerca de mi</h2>
+        <p class="about_me_p">Soy Julio Sevillano, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo
+          facilis ipsum ipsam. Obcaecati, rem pariatur!<br>
+          <span>¡Amante del aprendizaje!</span>
+        </p>
+      </div>
+    </section>
+    <section class="services_section" id="services">
+      <h2 class="services_h2">Servicios</h2>
+      <div class="services_main_container">
+        <div class="services_container">
+          <div class="services_container_decor"></div>
+          <i class="services_icon fa-solid fa-compass-drafting"></i>
+          <h3>UI/UX Design</h3>
+          <p>Diseño de interfaces de usuario. </p>
+        </div>
+        <div class="services_container">
+          <div class="services_container_decor"></div>
+          <i class=" services_icon fa-solid fa-mobile-screen"></i>
+          <h3>Resposinsive <br> Design</h3>
+          <p>Diseño de aplicaciones web y paginas que se adapten a todos los dispositivos</p>
+        </div>
+        <div class="services_container">
+          <div class="services_container_decor"></div>
+          <i class=" services_icon fa-solid fa-window-maximize"></i>
+          <h3>Web Aplications</h3>
+          <p>Creacion de single web con React</p>
+        </div>
+      </div>
+    </section>
+    <section class="my_abilities_section" id="my_abilities">
+      <h2 class="my_abilities_h2">Mis habilidades</h2>
+      </div>
+      <div class="container">
+        <div class="carousel">
+          <div class="carousel_face">
+            <div class="carousel_content">
+              <i class="fa-brands fa-js"></i>
+              <span class="carousel_p">JS</s>
+            </div>
+          </div>
+          <div class="carousel_face">
+            <div class="carousel_content">
+              <i class="fa-brands fa-react"></i>
+              <span class="carousel_p">React</s>
+            </div></i>
+          </div>
+          <div class="carousel_face">
+            <div class="carousel_content">
+              <i class="fa-brands fa-html5"></i>
+              <span class="carousel_p">HTML</s>
+            </div></i>
+          </div>
+          <div class="carousel_face">
+            <div class="carousel_content">
+              <i class="fa-brands fa-css3"></i>
+              <span class="carousel_p">CSS</s>
+            </div></i>
+          </div>
+          <div class="carousel_face">
+            <div class="carousel_content">
+              <i class="fa-brands fa-node"></i>
+              <span class="carousel_p">Node</s>
+            </div></i>
+          </div>
+          <div class="carousel_face">
+            <div class="carousel_content">
+              <i class="fa-solid fa-database"></i>
+              <span class="carousel_p">SQL</s>
+            </div></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio_section" id="portfolio">
+      <div class="portfolio_container">
+        <h2 class="portfolio_h2">Mis Portafolio</h2>
+        <div class="portfolio_links_container">
+          <div class="flip-card">
+            <a href="https://my-first-project-card.netlify.app/" target="_blank">
+              <div class="flip-card-inner">
+                <div class="flip-card-front one">
+                </div>
+                <div class="flip-card-back">
+                  <div class="flip-card-decor"></div>
+                  <h2>Card - Frontend Mentor</h2>
+                  <p>HTML/CSS</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="flip-card">
+            <a href="#" target="_blank">
+              <div class="flip-card-inner">
+                <div class="flip-card-front two">
+                </div>
+                <div class="flip-card-back">
+                  <div class="flip-card-decor"></div>
+                  <h2>Devtter (Coming soon)</h2>
+                  <p>React NextJS</p>
+                  <p>Rest-api</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="flip-card">
+            <a href="#" target="_blank">
+              <div class="flip-card-inner">
+                <div class="flip-card-front three">
+                </div>
+                <div class="flip-card-back">
+                  <div class="flip-card-decor"></div>
+                  <h2>Coming soon</h2>
+                  <p>HTML/CSS</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="flip-card">
+            <a href="#" target="_blank">
+              <div class=" flip-card-inner">
+                <div class="flip-card-front four">
+                </div>
+                <div class="flip-card-back">
+                  <div class="flip-card-decor"></div>
+                  <h2>Coming soon</h2>
+                  <p>HTML/Bootstrap</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact_section" id="contact">
+      <div class="contact_main_container">
+        <h2 class="contact_h2">Contacto</h2>
+        <div class="contact_main_subcontainer">
+          <a class="contact_a" href="https://wa.me/+593988527400" target="_blank">
+            <div class="contact_container whatsapp">
+              <div></div>
+              <h3 class="contact_h3">Whatsapp</h3>
+              <i class="fa-brands fa-whatsapp"></i>
+              <P class="contact_whatsapp_p">Numero celular</P>
+            </div>
+          </a>
+          <a class="contact_a" href="julio:email@example.com">
+            <div class="contact_container email">
+              <div></div>
+              <h3 class="contact_h3">Email</h3>
+              <i class="fa-solid fa-at"></i>
+              <P class="contact_email_p">acirdeveloper@gmail.com</P>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer_container">
+      <div class="footer_content">
+        <h3 class="footer_h3">"keep it simple, stupid" <br>(Kelly Johnson)</h3>
+        <p class="footer_p">&copy; 2022 Julio Sevillano</p>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
