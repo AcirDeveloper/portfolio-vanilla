@@ -50,25 +50,6 @@
 }
 
 .flip-card-front.one {
-	background-image: url('../images/card-frontend-mentor.png');
-	background-size: cover;
-	color: black;
-}
-
-.flip-card-front.two {
-	background-image: url('../images/ecommerce.png');
-	background-size: cover;
-	color: black;
-}
-
-.flip-card-front.three {
-	background-image: url('../images/kiss.jpg');
-	background-size: cover;
-	color: black;
-}
-
-.flip-card-front.four {
-	background-image: url('../images/kiss.jpg');
 	background-size: cover;
 	color: black;
 }
