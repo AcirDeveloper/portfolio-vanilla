@@ -13,66 +13,59 @@
   <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;600&display=swap" rel="stylesheet">
   <!-- Mis Estilos -->
   <link rel="stylesheet" href="./assets/css/styles.css">
-  <link rel="stylesheet" href="./assets/css/response.css">
-  <link rel="stylesheet" href="./assets/css/header.css">
-  <link rel="stylesheet" href="./assets/css/animation.css">
-  <link rel="stylesheet" href="./assets/css/home.css">
-  <link rel="stylesheet" href="./assets/css/services.css">
-  <link rel="stylesheet" href="./assets/css/about.css">
-  <link rel="stylesheet" href="./assets/css/abilities.css">
-  <link rel="stylesheet" href="./assets/css/portfolio.css">
-  <link rel="stylesheet" href="./assets/css/contact.css">
   <!-- Scripts -->
   <script src="https://kit.fontawesome.com/6a74fdfcbd.js" crossorigin="anonymous" defer></script>
+  <script src="./assets/js/components/formulario.js" defer></script>
   <script src="./assets/js/main.js" type="module" defer></script>
   <!-- Title -->
-  <title>Portfolio | JCV </title>
+  <title>JVC</title>
 </head>
 
 <body id="body" class="page">
+
+  <!-- HEADER -->
   <header class="header page_header">
-    <div class="responsive_nav_container">
+    <!-- Responsiva de la barra de navegación -->
+    <section class="responsive_nav_container">
       <div class="menuToggle">
         <input type="checkbox" />
         <span></span>
         <span></span>
         <span></span>
         <ul class="menu">
-          <a href="#body">
-            <li>Home</li>
-          </a>
           <a href="#about_me">
-            <li>About me</li>
-          </a>
-          <a href="#my_abilities">
-            <li>Habilities</li>
+            <li>Sobre mi</li>
           </a>
           <a href="#services">
-            <li>Services</li>
+            <li>Servicios</li>
+          </a>
+          <a href="#my_abilities">
+            <li>Habilidades</li>
           </a>
           <a href="#portfolio">
-            <li>Portfolio</li>
+            <li>Proyectos</li>
           </a>
           <a href="#contact">
-            <li>Contact</li>
+            <li>Contacto</li>
           </a>
-          <a href="#" class="button_download" download><button>Download CV</button></a>
         </ul>
       </div>
-    </div>
-    <h1 class="header_h1">JVC</h1>
-    <div class="navbar_container">
+    </section>
+    <!-- Barra de navegación -->
+    <h1 class="header_h1"><a href="#body" class="navbar_a home">JVC</a></h1>
+    <section class="navbar_container">
       <nav class="navbar">
-        <a href="#body" class="navbar_a home">Home</a>
-        <a href="#about_me" class="navbar_a">About me</a>
-        <a href="#my_abilities" class="navbar_a">Habilities</a>
-        <a href="#services" class="navbar_a">Services</a>
-        <a href="#portfolio" class="navbar_a">Portfolio</a>
-        <a href="#contact" class="navbar_a">Contact</a>
-        <a href="#" class="button_download" download><button>Download CV</button></a>
+        <a href="#about_me" class="navbar_a">Sobre Mi</a>
+        <a href="#services" class="navbar_a">Servicios</a>
+        <a href="#my_abilities" class="navbar_a">Habilidades</a>
+        <a href="#portfolio" class="navbar_a">Proyectos</a>
+        <a href="#contact" class="navbar_a">Contacto</a>
       </nav>
-    </div>
+    </section>
   </header>
+  <!-- Fin Header -->
+
+  <!-- Fondo Animado -->
   <ul class=" circles">
     <li></li>
     <li></li>
@@ -85,67 +78,345 @@
     <li></li>
     <li></li>
   </ul>
+
+  <!-- SECCION HEADER -->
   <section class="hero">
     <div class="hero_main_container">
-      <div class="hero_container">
-        <figure class="hero_portfolio_image_container">
-          <img class="hero_image" src="/assets/images/perfil.jpeg" alt="Julio foto">
-          <figcaption class="hero_image_caption"> Hola, soy Julio!</figcaption>
-        </figure>
+      <div class="mitad">
+        <div class="hero_subtitle_container">
+          <figcaption class="hero_image_caption"> <span class="saludo">👋</span> Soy Julio!</figcaption>
+          <h2 class="hero_subtitle">Diseñador y <br>desarrollador <span class="hero_subtitle_typewriting"
+              id="typewriter"></span></h2>
+        </div>
+        <div class="hero_social_menu ">
+          <ul>
+            <li>
+              <a href="./assets/docs/JulioSevillano_CV.pdf" class="button_download" download>
+                Descargar CV
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="hero_subtitle_container">
-        <h2 class="hero_subtitle">Diseñador y <br>desarrollador <span class="hero_subtitle_typewriting"
-            id="typewriter"></span></h2>
+      <div>
+        <div class="hero_container">
+          <figure class="hero_portfolio_image_container">
+            <img class="hero_image" src="/assets/images/perfil.jpeg" alt="Julio foto">
+          </figure>
+        </div>
       </div>
-      <div class="hero_social_menu ">
-        <ul>
-          <li><a href="https://github.com/AcirDeveloper" target="blank"><i class="fab fa-github"></i></a></li>
-          <li><a href="https://www.instagram.com/acirdeveloper/" target="blank"><i class="fab fa-instagram"></i></a>
-          </li>
-          <li><a href="https://www.linkedin.com/in/julio-sevillano/" target="blank"><i
-                class="fab fa-linkedin-in"></i></a></li>
-          <li><a href="https://twitter.com/acirdeveloper/" target="blank"><i class="fab fa-brands fa-twitter"></i></a>
-          </li>
-        </ul>
-      </div>
+    </div>
   </section>
+
   <main>
+    <!-- SECCION SOBRE MI -->
     <section class=" about_me_section" id="about_me">
       <div class="about_me_container ">
-        <h2 class="about_me_h2">Acerca de mi</h2>
-        <p class="about_me_p">Soy Julio Sevillano, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo
-          facilis ipsum ipsam. Obcaecati, rem pariatur!<br>
+        <h2 class="about_me_h2">Sobre mi</h2>
+        <p class="about_me_p">Soy una persona comprometida, responsable y con capacidad de trabajo en equipo. Me gusta
+          trabajar en ambientes colaborativos y creativos, donde pueda aportar y aprender de los demás. Me esfuerzo por
+          desarrollar proyectos de calidad y cumplir con las expectativas de mis clientes. Si estás buscando un
+          desarrollador junior con ganas de aprender y crecer en el mundo de la tecnología, no dudes en contactarme.<br>
           <span>¡Amante del aprendizaje!</span>
         </p>
       </div>
     </section>
+    <!-- SECCION SERVICIOS -->
     <section class="services_section" id="services">
       <h2 class="services_h2">Servicios</h2>
-      <div class="services_main_container">
-        <div class="services_container">
-          <div class="services_container_decor"></div>
-          <i class="services_icon fa-solid fa-compass-drafting"></i>
-          <h3>UI/UX Design</h3>
-          <p>Diseño de interfaces de usuario. </p>
+      <div class="container-services">
+        <div class="card-s">
+          <div class="face face1">
+            <div class="content">
+              <!-- <img src="./assets/icons/web.svg"> -->
+              <?xml version="1.0" encoding="iso-8859-1"?>
+              <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+              <svg fill="#000000" version="1.1" id="icono" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
+                <g>
+                  <g>
+                    <path d="M0,60.046v391.908h512V60.046H0z M496.378,100.306H127.903v15.622h368.476v320.406H15.622v-0.001V75.668h480.757V100.306z
+                    			" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <rect x="32.092" y="100.301" width="15.622" height="15.622" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <rect x="63.334" y="100.301" width="16.663" height="15.622" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <rect x="95.614" y="100.301" width="16.663" height="15.622" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path id="icono" d="M40.031,140.106v271.818h111.695V140.106H40.031z M136.104,396.303H55.652V266.659
+                    			c10.168,10.57,24.437,17.167,40.227,17.167c15.789,0,30.058-6.596,40.225-17.167V396.303z M95.879,268.204
+                    			c-22.182,0-40.227-18.045-40.227-40.225c0-22.181,18.045-40.225,40.227-40.225c22.181,0,40.225,18.045,40.225,40.225
+                    			C136.104,250.159,118.059,268.204,95.879,268.204z M136.104,189.298c-10.168-10.57-24.436-17.166-40.225-17.166
+                    			s-30.059,6.598-40.227,17.167v-33.57h80.452V189.298z" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <polygon points="176.134,140.106 176.134,267.814 368.085,267.814 368.085,252.192 191.755,252.192 191.755,155.728 
+                    			400.305,155.728 400.305,219.972 415.927,219.972 415.927,140.106 		" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <rect x="175.805" y="291.925" width="184.334" height="15.622" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <rect x="175.805" y="324.209" width="23.953" height="15.622" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <rect x="175.805" y="348.162" width="80.191" height="15.622" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <rect x="271.617" y="348.162" width="40.616" height="15.622" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <rect x="327.854" y="348.162" width="80.191" height="15.622" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <rect x="175.805" y="372.115" width="119.765" height="15.622" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <rect x="175.805" y="396.068" width="176.003" height="15.622" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path
+                      d="M461.744,262.405l-66.103-39.663c-7.122-4.272-16.195-3.157-22.069,2.717c-5.872,5.872-6.988,14.947-2.716,22.067
+                    			l39.664,66.105c2.949,4.917,8.134,7.85,13.866,7.85s10.916-2.935,13.866-7.85l0.719-1.198l2.037-10.794
+                    			c0.844-4.47,4.275-7.902,8.746-8.746l10.796-2.037l1.198-0.719c4.916-2.949,7.85-8.134,7.85-13.867
+                    			C469.596,270.539,466.661,265.355,461.744,262.405z M446.857,277.543c-10.836,2.043-19.157,10.365-21.202,21.201l-1.342,7.115
+                    			c-0.255-0.023-0.344-0.172-0.399-0.263l-39.663-66.104c-0.579-0.963-0.427-2.191,0.367-2.985c0.472-0.472,1.097-0.717,1.728-0.717
+                    			c0.432,0,0.866,0.115,1.258,0.349l66.104,39.663c0.093,0.055,0.242,0.144,0.265,0.4L446.857,277.543z" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <rect x="71.665" y="363.784" width="47.906" height="15.622" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <rect x="71.665" y="300.256" width="47.906" height="15.622" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <rect x="71.665" y="332.541" width="47.906" height="15.622" />
+                  </g>
+                </g>
+              </svg>
+              <h3>Desarrollo web</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>Puedo crear sitios web utilizando lenguajes de programación como HTML, CSS y JavaScript. Además, se
+                utilizar frameworks y bibliotecas populares como React, Angular para crear aplicaciones web
+                interactivas.</p>
+            </div>
+          </div>
         </div>
-        <div class="services_container">
-          <div class="services_container_decor"></div>
-          <i class=" services_icon fa-solid fa-mobile-screen"></i>
-          <h3>Resposinsive <br> Design</h3>
-          <p>Diseño de aplicaciones web y paginas que se adapten a todos los dispositivos</p>
+        <div class="card-s">
+          <div class="face face1">
+            <div class="content">
+              <!-- <img src="./assets/icons/mobile.svg"> -->
+              <?xml version="1.0" encoding="iso-8859-1"?>
+              <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+              <svg fill="#000000" height="800px" width="800px" version="1.1" id="icono"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
+                xml:space="preserve">
+                <g transform="translate(1 1)">
+                  <g>
+                    <g>
+                      <path d="M370.2-1H148.333C129.56-1,114.2,14.36,114.2,33.133V50.2v25.6c-5.12,0-8.533,3.413-8.533,8.533v8.533
+				c0,5.12,3.413,8.533,8.533,8.533v8.533c-5.12,0-8.533,3.413-8.533,8.533V127c0,5.12,3.413,8.533,8.533,8.533v8.533
+				c-5.12,0-8.533,3.413-8.533,8.533v8.533c0,5.12,3.413,8.533,8.533,8.533v273.067v34.133c0,18.773,15.36,34.133,34.133,34.133
+				H370.2c18.773,0,34.133-15.36,34.133-34.133v-34.133V50.2V33.133C404.333,14.36,388.973-1,370.2-1z M259.267,485.4
+				c-9.387,0-17.067-7.68-17.067-17.067s7.68-17.067,17.067-17.067c9.387,0,17.067,7.68,17.067,17.067S268.653,485.4,259.267,485.4z
+				 M131.267,67.267h256v358.4h-256V67.267z M131.267,476.867v-34.133h105.497c-7.117,6.267-11.63,15.43-11.63,25.6
+				s4.514,19.333,11.63,25.6h-88.43C138.947,493.933,131.267,486.253,131.267,476.867z M387.267,476.867
+				c0,9.387-7.68,17.067-17.067,17.067h-88.43c7.117-6.267,11.63-15.43,11.63-25.6s-4.514-19.333-11.63-25.6h105.497V476.867z
+				 M131.267,50.2V33.133c0-9.387,7.68-17.067,17.067-17.067H370.2c9.387,0,17.067,7.68,17.067,17.067V50.2H131.267z" />
+                      <path d="M293.4,24.6h-42.667c-5.12,0-8.533,3.413-8.533,8.533c0,5.12,3.413,8.533,8.533,8.533H293.4
+				c5.12,0,8.533-3.413,8.533-8.533C301.933,28.013,298.52,24.6,293.4,24.6z" />
+                      <path d="M225.133,24.6H216.6c-5.12,0-8.533,3.413-8.533,8.533c0,5.12,3.413,8.533,8.533,8.533h8.533
+				c5.12,0,8.533-3.413,8.533-8.533C233.667,28.013,230.253,24.6,225.133,24.6z" />
+                      <path d="M267.8,152.986V152.6h-8.533c-52.053,0-93.867,41.813-93.867,93.867c0,3.413,0,5.973,0,9.387l0.853,7.68h0.681
+				c7.969,43.831,46.112,76.8,92.332,76.8c52.053,0,93.867-41.813,93.867-93.867C353.133,197.292,315.814,157.263,267.8,152.986z
+				 M182.561,242.71c0.047-0.964,0.122-1.919,0.205-2.873c0.02-0.233,0.031-0.468,0.053-0.7
+				c3.446-35.896,31.934-64.618,67.915-68.616v75.947h-68.267C182.467,245.206,182.502,243.955,182.561,242.71z M259.267,323.267
+				c-36.791,0-67.215-25.388-74.903-59.733H267.8v-93.393c38.593,4.198,68.267,36.547,68.267,76.326
+				C336.067,289.133,301.933,323.267,259.267,323.267z" />
+                      <path d="M344.6,357.4h-85.333c-5.12,0-8.533,3.413-8.533,8.533s3.413,8.533,8.533,8.533H344.6c5.12,0,8.533-3.413,8.533-8.533
+				S349.72,357.4,344.6,357.4z" />
+                      <path d="M173.933,374.467h51.2c5.12,0,8.533-3.413,8.533-8.533s-3.413-8.533-8.533-8.533h-51.2c-5.12,0-8.533,3.413-8.533,8.533
+				S168.813,374.467,173.933,374.467z" />
+                      <path d="M250.733,391.533h-76.8c-5.12,0-8.533,3.413-8.533,8.533c0,5.12,3.413,8.533,8.533,8.533h76.8
+				c5.12,0,8.533-3.413,8.533-8.533C259.267,394.947,255.853,391.533,250.733,391.533z" />
+                      <path d="M344.6,391.533h-59.733c-5.12,0-8.533,3.413-8.533,8.533c0,5.12,3.413,8.533,8.533,8.533H344.6
+				c5.12,0,8.533-3.413,8.533-8.533C353.133,394.947,349.72,391.533,344.6,391.533z" />
+                      <path d="M344.6,84.333h-85.333c-5.12,0-8.533,3.413-8.533,8.533c0,5.12,3.413,8.533,8.533,8.533H344.6
+				c5.12,0,8.533-3.413,8.533-8.533C353.133,87.747,349.72,84.333,344.6,84.333z" />
+                      <path d="M173.933,101.4h51.2c5.12,0,8.533-3.413,8.533-8.533c0-5.12-3.413-8.533-8.533-8.533h-51.2
+				c-5.12,0-8.533,3.413-8.533,8.533C165.4,97.987,168.813,101.4,173.933,101.4z" />
+                      <path d="M173.933,135.533h76.8c5.12,0,8.533-3.413,8.533-8.533s-3.413-8.533-8.533-8.533h-76.8c-5.12,0-8.533,3.413-8.533,8.533
+				S168.813,135.533,173.933,135.533z" />
+                      <path d="M344.6,118.467h-59.733c-5.12,0-8.533,3.413-8.533,8.533s3.413,8.533,8.533,8.533H344.6c5.12,0,8.533-3.413,8.533-8.533
+				S349.72,118.467,344.6,118.467z" />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              <h3>Desarrollo de aplicaciones móviles</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>Se desarrollar aplicaciones móviles utilizando la herramienta como Android Studio. Además, puedo
+                utilizar frameworks populares como React Native y Flutter para crear aplicaciones móviles
+                multiplataforma</p>
+            </div>
+          </div>
         </div>
-        <div class="services_container">
-          <div class="services_container_decor"></div>
-          <i class=" services_icon fa-solid fa-window-maximize"></i>
-          <h3>Web Aplications</h3>
-          <p>Creacion de single web con React</p>
+        <div class="card-s">
+          <div class="face face1">
+            <div class="content">
+              <!-- <img src="./assets/icons/computer.svg" class="svg-cambio-color"> -->
+              <?xml version="1.0" encoding="utf-8"?>
+              <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+              <svg width="8000px" height="8000px" viewBox="0 0 1024 1024" fill="#000000" class="icono" id="icono"
+                version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M744.398 575.856c-4.406 0-8.062-3.578-8.062-7.998s3.5-7.998 7.906-7.998h0.156c4.434 0 7.996 3.578 7.996 7.998s-3.562 7.998-7.996 7.998zM1015.848 687.82H8.156a7.992 7.992 0 0 1-7.998-7.996 7.994 7.994 0 0 1 7.998-7.998h1007.692a7.992 7.992 0 0 1 7.996 7.998 7.992 7.992 0 0 1-7.996 7.996zM512 767.766c-17.644 0-31.99-14.356-31.99-31.99s14.346-31.99 31.99-31.99c17.652 0 31.992 14.356 31.992 31.99s-14.34 31.99-31.992 31.99z m0-47.984c-8.818 0-15.996 7.168-15.996 15.994s7.178 15.994 15.996 15.994c8.816 0 15.996-7.168 15.996-15.994s-7.18-15.994-15.996-15.994zM376.144 975.732a8.01 8.01 0 0 1-7.818-9.73l31.99-143.956c0.968-4.312 5.256-6.954 9.544-6.078a8.014 8.014 0 0 1 6.078 9.544l-31.99 143.956a8 8 0 0 1-7.804 6.264zM647.864 975.732a8 8 0 0 1-7.808-6.264l-31.988-143.956a8.01 8.01 0 0 1 6.074-9.544c4.328-0.876 8.59 1.766 9.542 6.078l31.992 143.956a8.008 8.008 0 0 1-7.812 9.73z"
+                  fill="" />
+                <path
+                  d="M671.954 975.732H352.05a7.992 7.992 0 0 1-7.998-7.998 7.992 7.992 0 0 1 7.998-7.996h319.904a7.992 7.992 0 0 1 7.996 7.996 7.992 7.992 0 0 1-7.996 7.998zM967.86 639.836H56.14a7.994 7.994 0 0 1-7.998-7.998V104a7.994 7.994 0 0 1 7.998-7.998h911.72c4.422 0 8 3.578 8 7.998v527.838a7.994 7.994 0 0 1-8 7.998zM64.138 623.84h895.726V111.998H64.138V623.84z"
+                  fill="" />
+                <path
+                  d="M967.86 800.038H56.14c-30.866 0-55.982-25.118-55.982-55.982V104.25c0-30.866 25.118-55.982 55.982-55.982h911.72c30.868 0 55.984 25.118 55.984 55.982v639.804c0 30.866-25.118 55.984-55.984 55.984zM56.14 64.262c-22.048 0-39.988 17.94-39.988 39.988v639.804c0 22.054 17.94 39.986 39.988 39.986h911.72c22.058 0 39.988-17.932 39.988-39.986V104.25c0-22.048-17.93-39.988-39.988-39.988H56.14z"
+                  fill="" />
+                <path
+                  d="M967.86 831.778H56.14c-31.388 0-55.982-24.586-55.982-55.982v-31.99a7.994 7.994 0 0 1 7.998-7.998 7.994 7.994 0 0 1 7.998 7.998v31.99c0 22.43 17.566 39.986 39.988 39.986h911.72c22.434 0 39.988-17.556 39.988-39.986v-31.74a7.994 7.994 0 0 1 8-7.998 7.992 7.992 0 0 1 7.996 7.998v31.74c-0.002 31.396-24.588 55.982-55.986 55.982zM583.976 639.836h-143.954a7.994 7.994 0 0 1-7.998-7.998v-31.99a7.992 7.992 0 0 1 7.998-7.996h143.954c4.422 0 8 3.576 8 7.996v31.99a7.994 7.994 0 0 1-8 7.998z m-135.956-15.996h127.96v-15.994h-127.96v15.994z"
+                  fill="" />
+                <path
+                  d="M583.976 607.846h-143.954a8.048 8.048 0 0 1-6.42-3.216 8.012 8.012 0 0 1-1.242-7.076l47.986-159.952a8.004 8.004 0 0 1 7.662-5.702h47.986a7.98 7.98 0 0 1 7.656 5.702l47.984 159.952a7.96 7.96 0 0 1-1.234 7.076 8.058 8.058 0 0 1-6.424 3.216z m-133.208-15.994h122.462l-43.188-143.958h-36.084l-43.19 143.958z"
+                  fill="" />
+                <path
+                  d="M512 463.89a7.994 7.994 0 0 1-7.998-7.998v-31.99a7.994 7.994 0 0 1 7.998-7.998 7.992 7.992 0 0 1 7.996 7.998v31.99a7.992 7.992 0 0 1-7.996 7.998zM551.988 575.856h-79.976a7.994 7.994 0 0 1-7.998-7.998v-31.99a7.992 7.992 0 0 1 7.998-7.996h79.976a7.99 7.99 0 0 1 7.996 7.996v31.99a7.992 7.992 0 0 1-7.996 7.998z m-71.978-15.996h63.982v-15.994h-63.982v15.994z"
+                  fill="" />
+                <path
+                  d="M512 559.86a7.992 7.992 0 0 1-7.998-7.996v-15.996a7.992 7.992 0 0 1 7.998-7.996 7.99 7.99 0 0 1 7.996 7.996v15.996A7.99 7.99 0 0 1 512 559.86zM440.022 607.846a7.996 7.996 0 0 1-5.654-13.652l31.99-31.99a7.994 7.994 0 0 1 11.308 0 7.994 7.994 0 0 1 0 11.308l-31.99 31.992a7.98 7.98 0 0 1-5.654 2.342zM583.976 607.846a7.98 7.98 0 0 1-5.652-2.342l-31.992-31.992a7.998 7.998 0 1 1 11.312-11.308l31.988 31.99a7.996 7.996 0 0 1-5.656 13.652zM488.492 271.95c-4.412 0-8.076-3.578-8.076-7.998s3.5-7.998 7.918-7.998h0.156c4.42 0 7.998 3.578 7.998 7.998s-3.576 7.998-7.996 7.998zM536.46 271.95c-4.402 0-8.058-3.578-8.058-7.998s3.5-7.998 7.902-7.998h0.156c4.438 0 8 3.578 8 7.998s-3.562 7.998-8 7.998zM504.488 319.934c-4.414 0-8.076-3.576-8.076-7.998s3.5-7.998 7.92-7.998h0.156c4.42 0 7.998 3.576 7.998 7.998s-3.578 7.998-7.998 7.998z"
+                  fill="" />
+                <path
+                  d="M520.48 319.934c-4.41 0-8.074-3.576-8.074-7.998s3.5-7.998 7.918-7.998h0.156c4.422 0 8 3.576 8 7.998s-3.578 7.998-8 7.998z"
+                  fill="" />
+                <path
+                  d="M551.988 367.92H472.02a7.994 7.994 0 0 1-7.998-7.998v-24.016a79.844 79.844 0 0 1-31.99-63.958c0-44.096 35.88-79.976 79.976-79.976 44.106 0 79.968 35.88 79.968 79.976a79.846 79.846 0 0 1-31.992 63.958v24.016a7.992 7.992 0 0 1-7.996 7.998z m-71.97-15.996h63.974v-20.15c0-2.67 1.324-5.162 3.542-6.646 17.824-11.926 28.446-31.81 28.446-53.178 0-35.28-28.696-63.98-63.972-63.98-35.278 0-63.98 28.702-63.98 63.98 0 21.376 10.63 41.252 28.444 53.178a7.992 7.992 0 0 1 3.546 6.646v20.15zM535.992 399.91h-47.978a7.994 7.994 0 0 1-7.998-7.998 7.994 7.994 0 0 1 7.998-7.998h47.978c4.422 0 8 3.578 8 7.998a7.994 7.994 0 0 1-8 7.998z"
+                  fill="" />
+                <path
+                  d="M488.014 375.916a7.994 7.994 0 0 1-7.998-7.998v-7.998a7.994 7.994 0 0 1 7.998-7.998 7.994 7.994 0 0 1 7.998 7.998v7.998a7.992 7.992 0 0 1-7.998 7.998zM535.992 375.916a7.994 7.994 0 0 1-7.996-7.998v-7.998a7.994 7.994 0 0 1 7.996-7.998c4.422 0 8 3.578 8 7.998v7.998a7.994 7.994 0 0 1-8 7.998zM504.01 399.91a7.994 7.994 0 0 1-7.998-7.998v-7.998a7.994 7.994 0 0 1 7.998-7.998 7.994 7.994 0 0 1 7.998 7.998v7.998a7.994 7.994 0 0 1-7.998 7.998z"
+                  fill="" />
+                <path
+                  d="M520.004 399.91a7.994 7.994 0 0 1-7.996-7.998v-7.998a7.994 7.994 0 1 1 15.988 0v7.998a7.988 7.988 0 0 1-7.992 7.998zM637.524 287.944H583.54c-4.418 0-7.996-3.576-7.996-7.998s3.578-7.998 7.996-7.998h53.984c12.09 0 15.028-4.726 15.996-6.28 4.14-6.702 2.484-18.932-0.876-30.078l-7.964 15.94a8.002 8.002 0 0 1-7.156 4.42h-57.636c-4.422 0-8-3.576-8-7.998s3.578-7.998 8-7.998h52.704l13.778-27.57c2.714-5.42 11.59-5.42 14.304 0 2.032 4.084 19.558 40.48 6.454 61.684-3.924 6.332-12.234 13.876-29.604 13.876zM440.366 287.944h-53.876c-17.376 0-25.688-7.544-29.6-13.87-13.106-21.204 4.412-57.6 6.452-61.684 2.718-5.42 11.59-5.42 14.308 0l13.784 27.57h52.28c4.42 0 7.998 3.576 7.998 7.998s-3.578 7.998-7.998 7.998h-57.224a8.002 8.002 0 0 1-7.154-4.42l-7.966-15.94c-3.36 11.146-5.014 23.376-0.868 30.078 0.96 1.554 3.888 6.28 15.986 6.28h53.876c4.42 0 7.998 3.576 7.998 7.998s-3.576 7.992-7.996 7.992z"
+                  fill="" />
+                <path
+                  d="M571.856 239.958a8.008 8.008 0 0 1-7.98-7.514c-3.484-57.662-53.562-72.626-54.062-72.766a8.008 8.008 0 0 1-5.498-9.888c1.218-4.256 5.662-6.678 9.888-5.498 0.618 0.18 61.464 18.354 65.636 87.184a7.996 7.996 0 0 1-7.984 8.482z"
+                  fill="" />
+                <path
+                  d="M452.174 239.958a7.998 7.998 0 0 1-7.99-8.482c4.148-68.83 65.012-87.004 65.628-87.184 4.218-1.18 8.64 1.234 9.862 5.474a8.008 8.008 0 0 1-5.45 9.904c-2.062 0.6-50.618 15.464-54.078 72.774a7.996 7.996 0 0 1-7.972 7.514z"
+                  fill="" />
+                <path
+                  d="M216.09 495.88a7.994 7.994 0 0 1-7.998-7.998V104c0-4.42 3.578-7.998 7.998-7.998s7.998 3.578 7.998 7.998v383.882a7.994 7.994 0 0 1-7.998 7.998z"
+                  fill="" />
+                <path
+                  d="M430.422 495.88H216.09a7.994 7.994 0 0 1-7.998-7.998 7.994 7.994 0 0 1 7.998-7.998h214.332a7.994 7.994 0 0 1 7.998 7.998 7.994 7.994 0 0 1-7.998 7.998zM823.906 495.88H593.57c-4.422 0-8-3.578-8-7.998a7.994 7.994 0 0 1 8-7.998h230.336a7.994 7.994 0 0 1 7.996 7.998 7.994 7.994 0 0 1-7.996 7.998z"
+                  fill="" />
+                <path
+                  d="M823.906 495.88c-4.422 0-8-3.578-8-7.998V104a7.994 7.994 0 0 1 8-7.998A7.994 7.994 0 0 1 831.902 104v383.882a7.994 7.994 0 0 1-7.996 7.998zM162.764 543.866a7.946 7.946 0 0 1-5.944-2.654 8.002 8.002 0 0 1 0.594-11.294l53.328-47.976a7.968 7.968 0 0 1 11.292 0.594 7.996 7.996 0 0 1-0.594 11.292L168.114 541.82a7.98 7.98 0 0 1-5.35 2.046z"
+                  fill="" />
+                <path
+                  d="M871.89 543.866a7.982 7.982 0 0 1-5.656-2.342l-47.984-47.986a7.994 7.994 0 0 1 0-11.308 7.994 7.994 0 0 1 11.308 0l47.984 47.984a7.996 7.996 0 0 1-5.652 13.652z"
+                  fill="" />
+                <path
+                  d="M312.062 639.836H56.14a7.994 7.994 0 0 1-7.998-7.998v-95.97a7.992 7.992 0 0 1 7.998-7.996h255.922a7.992 7.992 0 0 1 7.998 7.996v95.97a7.994 7.994 0 0 1-7.998 7.998zM64.138 623.84h239.926v-79.974H64.138v79.974z"
+                  fill="" />
+                <path
+                  d="M967.86 639.836H711.938a7.994 7.994 0 0 1-7.996-7.998v-95.97a7.992 7.992 0 0 1 7.996-7.996H967.86c4.422 0 8 3.576 8 7.996v95.97a7.994 7.994 0 0 1-8 7.998z m-247.922-15.996h239.926v-79.974H719.938v79.974z"
+                  fill="" />
+                <path
+                  d="M312.062 591.852H56.14c-4.42 0-7.998-3.578-7.998-7.998s3.578-7.998 7.998-7.998h255.922c4.42 0 7.998 3.578 7.998 7.998s-3.578 7.998-7.998 7.998z"
+                  fill="" />
+                <path
+                  d="M216.09 591.852a7.994 7.994 0 0 1-5.654-13.652l47.986-47.986a7.996 7.996 0 1 1 11.308 11.31l-47.986 47.984a7.966 7.966 0 0 1-5.654 2.344z"
+                  fill="" />
+                <path
+                  d="M120.12 639.836a7.994 7.994 0 0 1-5.654-13.652L162.452 578.2a7.996 7.996 0 1 1 11.31 11.308l-47.986 47.984a7.98 7.98 0 0 1-5.656 2.344z"
+                  fill="" />
+                <path
+                  d="M823.906 575.856h-47.988c-4.418 0-7.996-3.578-7.996-7.998s3.578-7.998 7.996-7.998h47.988c4.418 0 7.996 3.578 7.996 7.998s-3.578 7.998-7.996 7.998z"
+                  fill="" />
+                <path
+                  d="M744.398 607.846c-4.406 0-8.062-3.576-8.062-7.998 0-4.42 3.5-7.996 7.906-7.996h0.156a7.982 7.982 0 0 1 7.996 7.996 7.982 7.982 0 0 1-7.996 7.998z"
+                  fill="" />
+                <path
+                  d="M823.906 607.846h-47.988a7.992 7.992 0 0 1-7.996-7.998 7.992 7.992 0 0 1 7.996-7.996h47.988a7.992 7.992 0 0 1 7.996 7.996 7.992 7.992 0 0 1-7.996 7.998z"
+                  fill="" />
+                <path
+                  d="M856.364 575.856c-4.406 0-8.058-3.578-8.058-7.998s3.496-7.998 7.902-7.998h0.156c4.438 0 7.996 3.578 7.996 7.998s-3.56 7.998-7.996 7.998z"
+                  fill="" />
+                <path
+                  d="M935.872 575.856h-47.984c-4.422 0-8-3.578-8-7.998s3.578-7.998 8-7.998h47.984c4.418 0 7.996 3.578 7.996 7.998s-3.578 7.998-7.996 7.998z"
+                  fill="" />
+                <path
+                  d="M856.364 607.846c-4.406 0-8.058-3.576-8.058-7.998 0-4.42 3.496-7.996 7.902-7.996h0.156a7.98 7.98 0 0 1 7.996 7.996 7.98 7.98 0 0 1-7.996 7.998z"
+                  fill="" />
+                <path
+                  d="M935.872 607.846h-47.984c-4.422 0-8-3.576-8-7.998a7.994 7.994 0 0 1 8-7.996h47.984a7.992 7.992 0 0 1 7.996 7.996 7.992 7.992 0 0 1-7.996 7.998z"
+                  fill="" />
+              </svg>
+              <h3>Desarrollo de software de escritorio</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>Puedo crear software de escritorio utilizando lenguajes de programación como Java y C++. Además, puedo
+                utilizar frameworks populares como Electron para crear aplicaciones de escritorio multiplataforma.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <!-- SECCION HABILIDADES -->
     <section class="my_abilities_section" id="my_abilities">
       <h2 class="my_abilities_h2">Mis habilidades</h2>
       </div>
-      <div class="container">
+      <div class="container-habilidades">
         <div class="carousel">
           <div class="carousel_face">
             <div class="carousel_content">
@@ -186,37 +457,94 @@
         </div>
       </div>
     </section>
+    <!-- SECCION PROYECTOS -->
     <section class="portfolio_section" id="portfolio">
       <div class="portfolio_container">
-        <h2 class="portfolio_h2">Mis Portafolio</h2>
+        <h2 class="portfolio_h2">PROYECTOS</h2>
         <div id="portfolio" class="portfolio_links_container">
+          <!-- Codigo proyectos en el script -> portfolio -->
         </div>
       </div>
     </section>
+    <!-- SECCION CONTACTO -->
     <section class="contact_section" id="contact">
-      <div class="contact_main_container">
-        <h2 class="contact_h2">Contacto</h2>
-        <div class="contact_main_subcontainer">
-          <a class="contact_a" href="https://wa.me/+593988527400" target="_blank">
-            <div class="contact_container whatsapp">
-              <div></div>
-              <h3 class="contact_h3">Whatsapp</h3>
-              <i class="fa-brands fa-whatsapp"></i>
-              <P class="contact_whatsapp_p">Numero celular</P>
+      <div class="container">
+        <span class="big-circle"></span>
+        <img src="assets/images/shape.png" class="square" alt="" />
+        <div class="form">
+          <div class="contact-info">
+            <h3 class="title">Mantengámonos en contacto</h3>
+            <br><br>
+            <div class="info">
+              <div class="information">
+                <img src="assets/images/location.png" class="icon" alt="" />
+                <p style="font-size: 12px;">Ecuador Quito - Pichincha - Pedro Moncayo: Calle Pacífico Proaño - Pasaje
+                  Carlos Estrella</p>
+              </div>
+              <div class="information">
+                <img src="assets/images/email.png" class="icon" alt="" />
+                <p style="font-size: 12px;">acirdeveloper@gmail.com</p>
+              </div>
+              <div class="information">
+                <img src="assets/images/phone.png" class="icon" alt="" />
+                <p style="font-size: 12px;">(+593) 96 957 0845</p>
+              </div>
             </div>
-          </a>
-          <a class="contact_a" href="julio:email@example.com">
-            <div class="contact_container email">
-              <div></div>
-              <h3 class="contact_h3">Email</h3>
-              <i class="fa-solid fa-at"></i>
-              <P class="contact_email_p">acirdeveloper@gmail.com</P>
+
+            <div class="social-media">
+              <p>Redes Sociales:</p>
+              <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100080640219642" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/acirdeveloper" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/acirdeveloper/" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/julio-sevillano/" target="_blank">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
             </div>
-          </a>
+          </div>
+
+          <div class="contact-form">
+            <span class="circle one"></span>
+            <span class="circle two"></span>
+
+            <form action="index.html" autocomplete="off" id="form">
+              <!-- <h3 class="title">Contact us</h3> -->
+              <div class="input-container">
+                <input type="text" name="name" class="input" required />
+                <label for="">Nombre </label>
+                <span>Nombre</span>
+              </div>
+              <div class="input-container">
+                <input type="email" name="email" class="input" required />
+                <label for="">Correo Electrónico</label>
+                <span>Correo Electrónico</span>
+              </div>
+              <div class="input-container">
+                <input type="text" name="asunto" class="input" required />
+                <label for="">Asunto</label>
+                <span>Asunto</span>
+              </div>
+              <div class="input-container textarea">
+                <textarea name="message" class="input" required></textarea>
+                <label for="">Mensaje</label>
+                <span>Mensaje</span>
+              </div>
+              <input type="submit" value="Enviar" class="btn" />
+              <a href="" id="trucazo"></a>
+            </form>
+          </div>
         </div>
       </div>
     </section>
   </main>
+  <!-- SECCION FOOTER -->
   <footer>
     <div class="footer_container">
       <div class="footer_content">
