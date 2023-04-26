@@ -1,45 +1,8 @@
 <!DOCTYPE html>
 <html lang="es" >
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Julio Sevillano | Portafolio Web</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
-    body {
-      font-family: 'Fira Code', monospace;
-      line-height: 1.9;
-      font-size: 1.1rem; 1.1rem;
-    }
-    .barra {
-        height: 20px;
-        position: relative;
-        background: #fff;
-        border-radius: 25px;
-        padding: 10px;
-        align-items: center;
-        align-content: center;
-        text-align: center;
-        color: black;
-        font-weight: bold;
-      }
-    .barra > span {
-        display: block;
-        height: 100%;
-        border-top-right-radius: 8px;
-        border-bottom-right-radius: 8px;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-        background-color: aqua;
-        position: relative;
-        overflow: hidden;
-        animation: prog 2s linear;        
-      }
-    @keyframes prog {
-      0% {width: 0%}
-      100% {width: 100%}
-    }
-</style>
+  
+  <link rel="stylesheet" href="./assets/css/markdown.css">
 
 </head>
 <body>
