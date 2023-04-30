@@ -34,12 +34,13 @@ Este es mi portafolio web, creado 100% desde cero sin utilizar ningún framework
 
 [🌎 Julio Sevillano | WEB 🖥️](https://portafolio-v1-acir.netlify.app/)
 
+<!--
 <div class="barra">
   <span style="width: 85%">85%</span>
 </div>
 <br>
 <hr>
-
+-->
 _¡Gracias por visitar mi portafolio web y dejar tu estrellita al proyecto! Si tienes alguna pregunta o sugerencia, por favor no dudes en contactarme._
 
 </body>
