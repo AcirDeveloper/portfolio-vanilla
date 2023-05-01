@@ -41,7 +41,7 @@ Este es mi portafolio web, creado 100% desde cero sin utilizar ningún framework
 <br>
 <hr>
 -->
-_¡Gracias por visitar mi portafolio web y dejar tu estrellita al proyecto! Si tienes alguna pregunta o sugerencia, por favor no dudes en contactarme._
+_¡Gracias por visitar mi portafolio web y dejar tu estrellita al proyecto! Si tienes alguna pregunta o sugerencia, por favor no dudes en contactarme 🎭._ 
 
 </body>
 </html>
