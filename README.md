@@ -9,7 +9,7 @@
 
 # **Mi Portafolio Web**
 
-Este es mi portafolio web, creado 100% desde cero sin utilizar ningún framework. El sitio contiene información sobre mí, mi experiencia laboral, proyectos que he realizado y formas de contactarme.
+Este es mi portafolio web, creado 100% desde cero sin utilizar ningún framework. El sitio contiene información sobre mí, mi experiencia laboral, proyectos que he realizado y formas de contactarme. 🗺🌍
 
 ## **Tecnologías utilizadas**
 
